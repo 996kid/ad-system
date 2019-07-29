@@ -1,5 +1,7 @@
 package com.kid.ad.advice;
 
+import com.kid.ad.annotation.IgnoreResponseAdvice;
+import com.kid.ad.vo.CommonResponse;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -16,12 +18,36 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 @RestControllerAdvice
 public class CommonResponseDataAdvice implements ResponseBodyAdvice<Object> {
     @Override
-    public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
-        return false;
+    @SuppressWarnings("all")
+    public boolean supports(MethodParameter methodParameter,
+                            Class<? extends HttpMessageConverter<?>> aClass) {
+        if (methodParameter.getDeclaringClass().isAnnotationPresent(
+                IgnoreResponseAdvice.class
+        )) {
+            return false;
+        } else if (methodParameter.getMethod().isAnnotationPresent(
+                IgnoreResponseAdvice.class
+        )) {
+            return false;
+        }
+        return true;
     }
 
     @Override
-    public Object beforeBodyWrite(Object o, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
-        return null;
+    @SuppressWarnings("all")
+    public Object beforeBodyWrite(Object o, MethodParameter methodParameter,
+                                  MediaType mediaType,
+                                  Class<? extends HttpMessageConverter<?>> aClass,
+                                  ServerHttpRequest serverHttpRequest,
+                                  ServerHttpResponse serverHttpResponse) {
+        CommonResponse commonResponse = new CommonResponse(0,"");
+        if (null == o) {
+            return commonResponse;
+        } else if (o instanceof CommonResponse) {
+            commonResponse = (CommonResponse) o;
+        } else {
+            commonResponse.setData(o);
+        }
+        return commonResponse;
     }
 }
