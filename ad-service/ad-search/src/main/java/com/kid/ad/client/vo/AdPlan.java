@@ -1,4 +1,4 @@
-package com.imooc.ad.client.vo;
+package com.kid.ad.client.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

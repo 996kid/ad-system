@@ -1,13 +1,13 @@
-package com.imooc.ad.service.impl;
+package com.kid.ad.service.impl;
 
-import com.imooc.ad.constant.Constants;
-import com.imooc.ad.dao.AdUserRepository;
-import com.imooc.ad.entity.AdUser;
-import com.imooc.ad.exception.AdException;
-import com.imooc.ad.service.IUserService;
-import com.imooc.ad.utils.CommonUtils;
-import com.imooc.ad.vo.CreateUserRequest;
-import com.imooc.ad.vo.CreateUserResponse;
+import com.kid.ad.constant.Constants;
+import com.kid.ad.dao.AdUserRepository;
+import com.kid.ad.entity.AdUser;
+import com.kid.ad.exception.AdException;
+import com.kid.ad.service.IUserService;
+import com.kid.ad.utils.CommonUtils;
+import com.kid.ad.vo.CreateUserRequest;
+import com.kid.ad.vo.CreateUserResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

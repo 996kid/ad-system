@@ -1,16 +1,13 @@
-package com.imooc.ad.vo;
+package com.kid.ad.vo;
 
-import com.imooc.ad.constant.CommonStatus;
-import com.imooc.ad.entity.Creative;
+import com.kid.ad.constant.CommonStatus;
+import com.kid.ad.entity.Creative;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-/**
- * Created by Qinyi.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -1,4 +1,7 @@
 package com.kid.ad.dao.url_condition;
 
-public interface AdUnitItRepository {
+import com.kid.ad.entity.unit_condition.AdUnitIt;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AdUnitItRepository extends JpaRepository<AdUnitIt, Long> {
 }

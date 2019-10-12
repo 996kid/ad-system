@@ -1,8 +1,8 @@
-package com.imooc.ad.client;
+package com.kid.ad.client;
 
-import com.imooc.ad.client.vo.AdPlan;
-import com.imooc.ad.client.vo.AdPlanGetRequest;
-import com.imooc.ad.vo.CommonResponse;
+import com.kid.ad.client.vo.AdPlan;
+import com.kid.ad.client.vo.AdPlanGetRequest;
+import com.kid.ad.vo.CommonResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,7 +1,7 @@
 server:
-  port: 7000
   servlet:
     context-path: /ad-sponsor
+  port: 7000
 
 spring:
   application:
@@ -9,17 +9,23 @@ spring:
   jpa:
     show-sql: true
     hibernate:
+      # 不依赖hibernate 执行ddl 完成表结构创建
       ddl-auto: none
     properties:
+      # 格式化 sql 打印
       hibernate.format_sql: true
+      # 避免 懒加载 bean 加载报错
     open-in-view: false
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/ad-system?autoReconnect=true
     username: root
     password: just996kid
     tomcat:
+      # 最大使用连接
       max-active: 4
+      # 空闲连接
       min-idle: 2
+      # 初始化连接数量
       initial-size: 2
 
 eureka:

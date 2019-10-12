@@ -1,9 +1,9 @@
-package com.imooc.ad.controller;
+package com.kid.ad.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.imooc.ad.service.ICreativeService;
-import com.imooc.ad.vo.CreativeRequest;
-import com.imooc.ad.vo.CreativeResponse;
+import com.kid.ad.service.ICreativeService;
+import com.kid.ad.vo.CreativeRequest;
+import com.kid.ad.vo.CreativeResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

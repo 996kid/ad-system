@@ -1,4 +1,4 @@
-package com.imooc.ad.vo;
+package com.kid.ad.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,6 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 
-/**
- * Created by Qinyi.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -1,10 +1,11 @@
-package com.imooc.ad.service;
+package com.kid.ad.service;
 
-import com.imooc.ad.entity.AdPlan;
-import com.imooc.ad.exception.AdException;
-import com.imooc.ad.vo.AdPlanGetRequest;
-import com.imooc.ad.vo.AdPlanRequest;
-import com.imooc.ad.vo.AdPlanResponse;
+
+import com.kid.ad.entity.AdPlan;
+import com.kid.ad.exception.AdException;
+import com.kid.ad.vo.AdPlanGetRequest;
+import com.kid.ad.vo.AdPlanRequest;
+import com.kid.ad.vo.AdPlanResponse;
 
 import java.util.List;
 

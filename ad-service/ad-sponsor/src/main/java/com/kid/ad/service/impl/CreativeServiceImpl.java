@@ -1,10 +1,10 @@
-package com.imooc.ad.service.impl;
+package com.kid.ad.service.impl;
 
-import com.imooc.ad.dao.CreativeRepository;
-import com.imooc.ad.entity.Creative;
-import com.imooc.ad.service.ICreativeService;
-import com.imooc.ad.vo.CreativeRequest;
-import com.imooc.ad.vo.CreativeResponse;
+import com.kid.ad.dao.CreativeRepository;
+import com.kid.ad.entity.Creative;
+import com.kid.ad.service.ICreativeService;
+import com.kid.ad.vo.CreativeRequest;
+import com.kid.ad.vo.CreativeResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
